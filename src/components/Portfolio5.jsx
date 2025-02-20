@@ -133,7 +133,7 @@ export default function Portfolio() {
             {[...Array(4)].map((_, idx) => (
               <img
                 key={idx}
-                src={`./assets/${country.toLowerCase()}_${idx + 1}.jpg`}
+                src={`${import.meta.env.BASE_URL}assets/${country.toLowerCase()}_${idx + 1}.jpg`}
                 alt={`${country} travel image`}
                 className="w-full aspect-[4/3] object-cover rounded-lg shadow-sm"
               />
