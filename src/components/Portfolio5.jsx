@@ -33,7 +33,10 @@ export default function Portfolio() {
           <Link to="about" smooth={true} className="cursor-pointer">
             About
           </Link>
-          <a href="#contact" className="cursor-pointer">
+          <a href="https://mail.google.com/mail/?view=cm&fs=1&to=kevin.zhong16@gmail.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="cursor-pointer">
             Contact
           </a>
           <a href="https://www.linkedin.com/in/kevin-zhong-unsw" target="_blank" rel="noopener noreferrer">
@@ -75,6 +78,16 @@ export default function Portfolio() {
           {/* Right: Phone Frame */}
           <div className="flex justify-center">
             <div className="relative w-60 h-120 rounded-3xl shadow-lg border-2 border-gray-300 overflow-hidden">
+              <button 
+                onClick={() => {
+                setCountry(countries[index]);
+                window.scrollTo({
+                  top: document.getElementById("about").offsetTop,
+                  behavior: "smooth",
+                });
+              }}
+              className="w-full h-full"
+              >
               <motion.img
                 key={countries[index]}
                 src={backgroundImages[countries[index]]}
@@ -82,8 +95,10 @@ export default function Portfolio() {
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ duration: 0.5 }}
-                className="w-full h-full object-cover"
+                className="w-full h-full object-cover cursor-pointer"
               />
+
+              </button>
             </div>
           </div>
         </div>
@@ -113,8 +128,10 @@ export default function Portfolio() {
             </p>
             <div className="flex space-x-4">
               <a
-                href="mailto:kevin.zhong16+spam@gmail.com"
-                className="px-6 py-3 bg-gray-800 text-white rounded-md hover:bg-gray-700 transition-colors"
+                href="https://mail.google.com/mail/?view=cm&fs=1&to=kevin.zhong16@gmail.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="cursor-pointer px-6 py-3 bg-gray-800 text-white rounded-md hover:bg-gray-700 transition-colors"
               >
                 Contact me
               </a>
