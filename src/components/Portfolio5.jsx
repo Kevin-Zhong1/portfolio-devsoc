@@ -62,7 +62,7 @@ export default function Portfolio() {
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -10 }}
               transition={{ duration: 0.3 }}
-              className="text-4xl font-semibold mt-4 cursor-pointer text-blue-700"
+              className="text-4xl font-semibold mt-4 cursor-pointer text-blue-700 underline"
               onClick={() => {
                 setCountry(countries[index]);
                 window.scrollTo({
@@ -111,7 +111,7 @@ export default function Portfolio() {
           <div className="space-y-6">
             <h1 className="text-5xl font-normal">Hey, I&apos;m Kevin!</h1>
             <p className="text-gray-700 leading-relaxed">
-              I&apos;m a computer science x finance student at UNSW and a software engineer at{" "}
+              I&apos;m a computer science x finance student at UNSW and a software engineer intern at{" "}
               <a href="https://www.joinroster.co" className="text-blue-700">
                 Roster
               </a>
