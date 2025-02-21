@@ -52,7 +52,7 @@ export default function Portfolio() {
         id="landing"
         className="flex flex-col items-center justify-center h-screen text-center"
       >
-        <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 items-center px-8 gap-12">
+        <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 items-center px-8 gap-20">
           {/* Left: Text */}
           <div className="text-left">
             <h1 className="text-5xl font-bold">Meet me in...</h1>
@@ -77,7 +77,7 @@ export default function Portfolio() {
 
           {/* Right: Phone Frame */}
           <div className="flex justify-center">
-            <div className="relative w-60 h-120 rounded-3xl shadow-lg border-2 border-gray-300 overflow-hidden">
+            <div className="relative w-72 h-144 rounded-3xl shadow-lg border-2 border-gray-300 overflow-hidden">
               <button 
                 onClick={() => {
                 setCountry(countries[index]);
